@@ -97,36 +97,6 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #9160ff;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #ffffff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-    }
-}
-
 .feature{
     width: 80%;
     margin: auto;
@@ -168,12 +138,6 @@ h3{
 
 .feature-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-@media(max-width: 700px){
-    .row{
-        flex-direction: column;
-    }
 }
 
 .partner{
@@ -320,4 +284,123 @@ h3{
 
 .purple-btn:hover{
     color: #ffffff;
+}
+
+/* ---- map ----- */
+
+.search-box{
+    position: absolute;
+    top: 825px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9160ff;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-btn{
+    color: white;
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.Location{
+    margin: auto;
+    width: 80%;
+    padding: 115px 0 ;
+    right: 500px;
+}
+
+/* ----membership---- */
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container h2{
+    color: #000;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.price-row{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.price-col{
+    background: #9160ff;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.price-col p{
+    font-size: 22px;
+}
+
+.price-col h3{
+    font-size: 34px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #fff;
+    list-style: none;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col ul li::before{
+    content: '\2022';
+    color: #000;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.price-col button:hover{
+    background: #5f0486;
 }
